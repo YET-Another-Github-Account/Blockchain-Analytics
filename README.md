@@ -1,8 +1,9 @@
 # Introduction 
 The intention of this document is to analyse and to evaluate current options and scenarios for blockchain analytics. 
-Practical scenario for this evaluation was the requirement of the YAM DAO to support the [degenerative.finance](https://degenerative.finance /) subproject with a dashboard that contains specific measures for observing the development and success of the project. 
+Practical scenario for this evaluation was the requirement of the YAM DAO to support the [degenerative.finance](https://degenerative.finance/) subproject with a dashboard that contains specific measures for observing the development and success of the project. 
 For developing the dashboard, three scenarios and technologies were briefly evaluated: 
 * [The Graph]( https://thegraph.com/)
+[The Graph]( https://thegraph.com/)
 * [Dune Analytics](https://duneanalytics.com/)
 * [Google BigQuery Ethereum dataset](https://cloud.google.com/blog/products/data-analytics/ethereum-bigquery-public-dataset-smart-contract-analytics)
 
@@ -11,7 +12,7 @@ In this next section the developer experiences and evaluation criteria for selec
 
 ## The Graph 
 The Graph is positioned as indexing protocol to build and publish APIs. These indexed and published APIs are referred as Subgraph. A wide variety of hosted and community provided Subgraphs for a significant amount of Blochchain and Defi projects are available [here](https://thegraph.com/explorer/).
-Technical backbone of a graph-node is a ([PostgreSQL database]( https://github.com/graphprotocol/graph-node#quick-start).
+Technical backbone of a graph-node is a [PostgreSQL database]( https://github.com/graphprotocol/graph-node#quick-start).
 The developments in the projects GithHub are licensed under the Apache Open-Source license. 
 The first implementation attempt was started with The Graph, but were later discontinued and replaced with Dune Analytics. 
 During the evaluation of the The Graph, the following challenges were experienced 
