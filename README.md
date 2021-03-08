@@ -22,11 +22,9 @@ For this evaluation it was possible to setup and index a SubGraph, unfortunately
 
 ### GraphQL as query language for analytical dashboards 
 Interface for querying the SubGraphs is the API query language 
-GraphQL is not positioned as an advanced analytics data query language like SQL. [here]( https://graphql.org/faq/#is-graphql-a-database-language-like-sql)
+GraphQL is not positioned as an advanced analytics data query language like SQL. ([Link])( https://graphql.org/faq/#is-graphql-a-database-language-like-sql)
 Therefore using a SubGraph and the GraphQL query language would not have been a suitable solution for creating a Dashboard that requires advanced analytical functions comparable to what modern SQL databases provide.  The required advanced analytical functions are for example window-functions. 
 
 ### Documentation and community support  
 The documentation and available community content are enterprise software grade. 
-Unfortunately the community support within the Discord channel left many questions unanswered and was not supportive as required. 
-
- 
+Unfortunately the community support within the Discord channel left many questions unanswered and was not supportive as required.
