@@ -47,18 +47,32 @@ This evaluation was done with the free version of Dune Analytics.
 Like for The Graph, the technical backend of Dune analytics is a PostgreSQL database. 
 When developing the Dashboard, there are four main components provided by Dune analytics. 
 
-### The Dashboard designer 
-The Dashboard designer is a browser based tool to design the dashboard. It provides basic design and layout options, but is sufficient enough to create visual appealing Dashboard. Compared to commercial business intelligence or dashboard tools, the Dune designer provided about 10%-20% of the functionality. Dune comes with an impressive gallery of popular [gallery of popular dashboard]( https://explore.duneanalytics.com/dashboards/popular) created by the team and community, which demonstrate the current functionality is more than sufficient to build professional dashboards.  
+###The Dashboard designer 
+The Dashboard designer is a browser based tool to design the dashboard. It provides basic design and layout options, but is sufficient enough to create visual appealing Dashboard. Compared to commercial business intelligence or dashboard tools, the Dune designer provided about 10%-20% of the functionality. Dune comes with an impressive [gallery of popular dashboards]( https://explore.duneanalytics.com/dashboards/popular) created by the team and community, which demonstrate the current functionality is more than sufficient to build professional dashboards.  
 The designer allows to drag & drop textboxes and widgets on the dashboard. The widgets provide the option for layout formatting with markup language. 
-### The query designer 
-For data engineers the most exciting feature of Dune is the access to the Dune database schema and the option to leverage the PostgreSQL-syntax. 
-The dune query designer combines a SQL-Editor and visualization designer, by providing the option to configure visual element like charts, tables or maps for the SQL-query results. 
-To prevent developers having to start from the scratch, these are a broad library of sample queries and the option to fork these queries for own adjustments. 
+###The query designer 
+For data engineers the most exciting feature of Dune is the access to the Dune database schema and the option to leverage the PostgreSQL-syntax and features. 
+The dune query designer combines a SQL-Editor and visualization designer, by providing the option to configure visual elements like charts, tables or maps for the SQL-query results. 
+To prevent developers having to start from the scratch, a broad library of sample queries is available and the option to fork these queries for own adjustments. 
 When browsing and reading the sample queries, the complexity and quality of the queries clearly indicate the involvement of expert data engineers.
-### The dune decoding and abstractions 
+###The dune decoding and abstractions 
 Next to the SQL-queries, the indexing/decoding for project specific contracts and the abstractions layer are important services for creating blockchain specific data queries. 
 In case project specific contracts are required for queries, the Dune team provides a [form]( https://duneanalytics.retool.com/embedded/public/892af55f-a6ff-41df-b203-f8acb6f0a38b) to schedule contracts for decoding. 
-Next to the decoding services, smart-contract domain specific databases views and tables enable SQL-developers to reuse existing data-models for example pre-calculated prices for tokens or views containing dex trades. These views and tables are referred as [abstraction layer]( https://duneanalytics.retool.com/embedded/public/892af55f-a6ff-41df-b203-f8acb6f0a38b) within the Dune data platform. Providing domain specific and predefined datasets is crucial for providing an efficient and sustainable infrastructure within the Dune database- and data models. 
-As consequence new projects have to be maintained in certain abstraction layer tables too For example being added ER20 tokens table to be available for DEX queries. During implementation these additions of new contracts and tokens to the abstraction layer will happen via GitHub workflows and require basic knowledge of these workflows. 
+Next to the decoding services, smart-contract domain specific databases views and tables enable SQL-developers to reuse existing data-models for example pre-calculated prices for tokens or views containing dex trades. These views and tables are referred as [abstraction layer]( https://duneanalytics.retool.com/embedded/public/892af55f-a6ff-41df-b203-f8acb6f0a38b) within the Dune data platform. Providing domain specific and predefined datasets is essential for providing an efficient and sustainable infrastructure within the Dune database- and data models. 
+For implementing dashboards for new projects, the contracts have to be maintained in certain abstraction layer tables. For example contracts being added to the ER20 tokens table, to be available for DEX queries. During implementation the maintenance of new contracts and tokens to the abstraction layer will happen via GitHub workflows. These interaction require basic knowledge of GitHub. 
 
 
+## Implementation of the degenerative.finance dashboard 
+The general setup here reflected to typical implementation of a dashboard project in corporate environments. The domain experts with strong DeFi background defined a requirements documents and the implementation was done with a strong background in analytics, but learner knowledge about Solidity contracts and the Dune data model. 
+ 
+### Lessons learned and best practice. 
+During the implementation the following best practices where identified for new Dashboard and projects. 
+
+* Document all relevant contracts and schedule them for decoding at the beginning of the implementation 
+* Get familiar with the Dune abstraction layer and maintain relevant contracts there early 
+
+* Browser and analyse the existing dashboards and queries to learn and adopt best practices  
+
+* In case of teams with distributed skillsets the Solidity developers or DeFi experts ideally specify specifications similar to the UMA [UMIPs]( https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-16.md) with pseudocode examples to adapted in SQL 
+
+* Ideally the Dune team and community would curate a glossary and quality assured samples for implementing common DeFi queries and charts like TVL, unique wallet holder, minting etc. 
