@@ -1,6 +1,6 @@
 # Introduction 
 The intention of this document is to analyse and to evaluate current options and scenarios for blockchain analytics. 
-Practical scenario for this evaluation was the requirement of the YAM DAO to support the [degenerative.finance](https://degenerative.finance/) subproject with a DeFi dashboard. The dashboard was supposed to visualize specific measures for observing the development and success of the project. 
+Practical scenario for this evaluation was the requirement of the YAM DAO to support the [degenerative.finance](https://degenerative.finance/) subproject with a DeFi dashboard. The dashboard was designed to visualize specific measures for observing the development and success of the project. 
 For developing the dashboard, three scenarios and technologies were briefly evaluated: 
 * [The Graph]( https://thegraph.com/)
 * [Dune Analytics](https://duneanalytics.com/)
@@ -10,7 +10,9 @@ In this next section the developer experiences and evaluation criteria for selec
 
 ## The Graph 
 The Graph is positioned as indexing protocol to build and publish APIs. These indexed and published APIs are referred as Subgraph. A wide variety of hosted and community provided Subgraphs for a significant amount of Blochchain and Defi projects are available [here](https://thegraph.com/explorer/).
+
 Technical backbone of a graph-node is a [PostgreSQL database]( https://github.com/graphprotocol/graph-node#quick-start).
+
 The developments in the projects GithHub are licensed under the Apache Open-Source license. 
 The first implementation attempt was started with The Graph, but were later discontinued and replaced with Dune Analytics. 
 During the evaluation of the The Graph, the following challenges were experienced: 
@@ -22,14 +24,18 @@ For this evaluation it was possible to setup and index a SubGraph, unfortunately
 
  
 ### GraphQL as query language for analytical dashboards 
-Interface for querying the SubGraphs is the API query language GraphQL, which not [positioned](https://graphql.org/faq/#is-graphql-a-database-language-like-sql) as an advanced analytics data query language like SQL. That’s why using a SubGraph and the GraphQL query language would not have been a suitable solution for creating a Dashboard that requires advanced analytical functions comparable to what modern SQL databases provide. The required advanced analytical functions are for example window- or median-functions. 
+Interface for querying the SubGraphs is the API query language GraphQL, which not [positioned](https://graphql.org/faq/#is-graphql-a-database-language-like-sql) as an advanced analytics data query language like SQL. That’s why using a SubGraph and the GraphQL query language would not have been a suitable solution for creating a Dashboard.  The dashboard requirements were advanced analytical functions comparable to what modern SQL databases provide. The required advanced analytical functions are for example window- or median-functions. 
 
 ### Documentation and community support  
 The project documentation and available community content are enterprise software grade. 
-Unfortunately the community support within the Discord channel left questions about the incomplete indexing unanswered and was not supportive as required to efficiently continue with the evaluation. This evaluation of the responsiveness on Discord might be a temporal and subjective experience. 
+Unfortunately the community support within the Discord channel left questions about the incomplete indexing unanswered and was not supportive as required to efficiently continue with the evaluation. 
+
+This evaluation of the responsiveness on Discord might be a temporal and subjective experience. 
 ### Summary   
-The active GitHub indicates a strong adoption of The Graph for creating APIs that serves dApps. For this dashboard evaluation a tool for creating advanced analytical functions is mandatory. By design GraphQL doesn’t provide these rich analytical functions like SQL does. 
+The active GitHub indicates a strong adoption of The Graph for creating APIs that serve dApps. For this dashboard evaluation query language that provided advanced analytical functions is mandatory. By design GraphQL doesn’t provide these rich analytical functions like SQL does. 
+
 Therefore The Graph wasn’t probably the right architectural choice from the beginning on and serves a different scenario which is API and dApp creation. 
+
 Out of scope in this evaluation were overall system design like the concepts of Indexers, Curators and Delegators.  
 Both the open-source license of the overall GitHub project and the usage the open-source database PostgreSQL are well aligned with the [DeFi paradigms](https://github.com/ong/awesome-decentralized-finance#what-is-decentralized-finance) of decentralization and open-source. 
 
