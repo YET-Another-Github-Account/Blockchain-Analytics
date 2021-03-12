@@ -18,13 +18,20 @@ The first implementation attempt was started with The Graph, but were later disc
 During the evaluation of the The Graph, the following challenges were experienced: 
 
 ### Ramp-Up time and developer background 
-Even if the procedure is well [documented]( https://thegraph.com/docs/define-a-subgraph#create-a-subgraph-project), setting up a SubGraph requires a minimum of Solidity developer skills and setting up a developer IDE.  The clear advantage here is the scalable self-service approach, in case the users come with the required technological background. 
+Even if the procedure is well [documented]( https://thegraph.com/docs/define-a-subgraph#create-a-subgraph-project), setting up a SubGraph requires a minimum of Solidity developer skills and setting up a developer IDE.  
+
+The clear advantage here is the scalable self-service approach, in case the users come with the required technological background. 
+
+
 For this evaluation it was possible to setup and index a SubGraph, unfortunately the indexed data was incomplete. Due to missing or unknown debug or logging options, it was not possible to identify the reason for the incomplete indexing. 
  
 
  
 ### GraphQL as query language for analytical dashboards 
-Interface for querying the SubGraphs is the API query language GraphQL, which not [positioned](https://graphql.org/faq/#is-graphql-a-database-language-like-sql) as an advanced analytics data query language like SQL. That’s why using a SubGraph and the GraphQL query language would not have been a suitable solution for creating a Dashboard.  The dashboard requirements were advanced analytical functions comparable to what modern SQL databases provide. The required advanced analytical functions are for example window- or median-functions. 
+Interface for querying the SubGraphs is the API query language GraphQL, which not [positioned](https://graphql.org/faq/#is-graphql-a-database-language-like-sql) as an advanced analytics data query language like SQL. 
+That’s why using a SubGraph and the GraphQL query language would not have been a suitable solution for creating a Dashboard.  
+
+The dashboard requirements were advanced analytical functions comparable to what modern SQL databases provide. The required advanced analytical functions are for example window- or median-functions. 
 
 ### Documentation and community support  
 The project documentation and available community content are enterprise software grade. 
