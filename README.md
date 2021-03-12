@@ -1,6 +1,6 @@
 # Introduction 
 The intention of this document is to analyse and to evaluate current options and scenarios for blockchain analytics. 
-Practical scenario for this evaluation was the requirement of the YAM DAO to support the [degenerative.finance](https://degenerative.finance/) subproject with a dashboard that contains specific measures for observing the development and success of the project. 
+Practical scenario for this evaluation was the requirement of the YAM DAO to support the [degenerative.finance](https://degenerative.finance/) subproject with a DeFi dashboard. The dashboard was supposed to visualize specific measures for observing the development and success of the project. 
 For developing the dashboard, three scenarios and technologies were briefly evaluated: 
 * [The Graph]( https://thegraph.com/)
 * [Dune Analytics](https://duneanalytics.com/)
@@ -22,7 +22,7 @@ For this evaluation it was possible to setup and index a SubGraph, unfortunately
 
  
 ### GraphQL as query language for analytical dashboards 
-Interface for querying the SubGraphs is the API query language GraphQL which not [positioned](https://graphql.org/faq/#is-graphql-a-database-language-like-sql) as an advanced analytics data query language like SQL. That’s why using a SubGraph and the GraphQL query language would not have been a suitable solution for creating a Dashboard that requires advanced analytical functions comparable to what modern SQL databases provide. The required advanced analytical functions are for example window- or median-functions. 
+Interface for querying the SubGraphs is the API query language GraphQL, which not [positioned](https://graphql.org/faq/#is-graphql-a-database-language-like-sql) as an advanced analytics data query language like SQL. That’s why using a SubGraph and the GraphQL query language would not have been a suitable solution for creating a Dashboard that requires advanced analytical functions comparable to what modern SQL databases provide. The required advanced analytical functions are for example window- or median-functions. 
 
 ### Documentation and community support  
 The project documentation and available community content are enterprise software grade. 
@@ -47,15 +47,15 @@ This evaluation was done with the free version of Dune Analytics.
 Like for The Graph, the technical backend of Dune analytics is a PostgreSQL database. 
 When developing the Dashboard, there are four main components provided by Dune analytics. 
 
-###The Dashboard designer 
+### The Dashboard designer 
 The Dashboard designer is a browser based tool to design the dashboard. It provides basic design and layout options, but is sufficient enough to create visual appealing Dashboard. Compared to commercial business intelligence or dashboard tools, the Dune designer provided about 10%-20% of the functionality. Dune comes with an impressive [gallery of popular dashboards]( https://explore.duneanalytics.com/dashboards/popular) created by the team and community, which demonstrate the current functionality is more than sufficient to build professional dashboards.  
 The designer allows to drag & drop textboxes and widgets on the dashboard. The widgets provide the option for layout formatting with markup language. 
-###The query designer 
+### The query designer 
 For data engineers the most exciting feature of Dune is the access to the Dune database schema and the option to leverage the PostgreSQL-syntax and features. 
 The dune query designer combines a SQL-Editor and visualization designer, by providing the option to configure visual elements like charts, tables or maps for the SQL-query results. 
 To prevent developers having to start from the scratch, a broad library of sample queries is available and the option to fork these queries for own adjustments. 
 When browsing and reading the sample queries, the complexity and quality of the queries clearly indicate the involvement of expert data engineers.
-###The dune decoding and abstractions 
+### The dune decoding and abstractions 
 Next to the SQL-queries, the indexing/decoding for project specific contracts and the abstractions layer are important services for creating blockchain specific data queries. 
 In case project specific contracts are required for queries, the Dune team provides a [form]( https://duneanalytics.retool.com/embedded/public/892af55f-a6ff-41df-b203-f8acb6f0a38b) to schedule contracts for decoding. 
 Next to the decoding services, smart-contract domain specific databases views and tables enable SQL-developers to reuse existing data-models for example pre-calculated prices for tokens or views containing dex trades. These views and tables are referred as [abstraction layer]( https://duneanalytics.retool.com/embedded/public/892af55f-a6ff-41df-b203-f8acb6f0a38b) within the Dune data platform. Providing domain specific and predefined datasets is essential for providing an efficient and sustainable infrastructure within the Dune database- and data models. 
