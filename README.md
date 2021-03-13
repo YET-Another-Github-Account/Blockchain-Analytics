@@ -40,15 +40,15 @@ The project documentation and available community content are enterprise softwar
 Unfortunately the community support within the Discord channel left questions about the incomplete indexing unanswered and was not supportive as required to efficiently continue and finish the evaluation. 
 
 This evaluation of the responsiveness on Discord might be a temporal and subjective experience. 
-### Summary   
-The active GitHub indicates a strong adoption of The Graph for creating APIs that serve dApps. For this dashboard evaluation query language that provided advanced analytical functions is mandatory. By design GraphQL doesn’t provide these rich analytical functions like SQL does. 
+### Summary The Graph evaluation 
+The active GitHub indicates a strong adoption of The Graph for creating APIs that serve dApps. For this dashboard evaluation a query language that provides advanced analytical functions is mandatory. By design GraphQL doesn’t provide these rich analytical functions like SQL does. 
 
 Therefore The Graph wasn’t probably the right architectural choice from the beginning on and serves a different scenario which is API and dApp creation. 
 
 ![TheGraphIndexing2](https://github.com/YET-Another-Github-Account/Blockchain-Analytics/blob/main/images/TheGraph2.png?raw=true)
 *Subgraph Indexing Logs*
 
-Out of scope in this evaluation were overall concepts designs like the concepts of Indexers, Curators and Delegators.  
+Out of scope in this evaluation were overall The Graph concepts  like Indexers, Curators and Delegators.  
 Both the open-source license of the overall GitHub project and the usage the open-source database PostgreSQL are well aligned with the [DeFi paradigms](https://github.com/ong/awesome-decentralized-finance#what-is-decentralized-finance) of decentralization and open-source. 
 
 ## Google BigQuery Ethereum dataset
