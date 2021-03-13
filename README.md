@@ -145,6 +145,9 @@ Some general thoughts, room for improvement and ideas for Blockchain analytics.
 
 * Data-science use cases require more functionality than the current Dune features provide
 
+![DegenDashboard2](https://github.com/YET-Another-Github-Account/Blockchain-Analytics/blob/main/images/DegenDashboard2.png?raw=true)
+*Degenerative.finance Dashboard*
+
 
 ### Disclaimer 
 This document is a working document and reflects the author's current experience and knowledge in the area of Blockchain analytics. 
