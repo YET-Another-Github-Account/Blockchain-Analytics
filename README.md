@@ -63,7 +63,6 @@ There are two non-technical aspects which make BigQuery theoretically not a good
 
 ## Dune Analytics 
 Inspired by this [YouTube video]( https://www.youtube.com/watch?v=AWlwO9T8dkY) Dune Analytics was evaluated as the next option for creating an advanced DeFi dashboard. 
-
 Dune analytics is an [Oslo](https://careers.duneanalytics.com/) based company with a free and pro [offering]( https://www.duneanalytics.com/pricing) for Dune analytics. 
 This evaluation was done with the free version of Dune Analytics. 
 
@@ -111,6 +110,7 @@ The general setup here reflected to typical implementation of a dashboard projec
 The actual implementation was done with a technical background in analytics, but basic knowledge about Solidity contracts and the Dune data model. Discord was used the discuss the implementation and progress. 
 
 ![DashboardMockup](https://github.com/YET-Another-Github-Account/Blockchain-Analytics/blob/main/images/DashboardMockUp.png?raw=true)
+
 *Dashboard mockup by @nonstopTheo*
  
 ### Lessons learned and best practices 
@@ -132,7 +132,7 @@ https://twitter.com/0xBoxer/status/1367563948082532362
 ![DegenDashboard1](https://github.com/YET-Another-Github-Account/Blockchain-Analytics/blob/main/images/DegenDashboard1.png?raw=true)
 *Degenerative.finance Dashboard*
 
-### Conclusion and state of the Blockchain analytics 
+### Conclusions and state of the Blockchain analytics 
 Some general thoughts, room for improvement and ideas for Blockchain analytics. 
 
 * Duplicating the transactional Blockchains ledger to analytical databases reproduces the 30+ year old approach of having to copy transactional systems of records to data-warehouses for advanced analytics
