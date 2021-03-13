@@ -62,7 +62,7 @@ There are two non-technical aspects which make BigQuery theoretically not a good
 *GCP Big Query Datasets*
 
 ## Dune Analytics 
-Due this [YouTube video]( https://www.youtube.com/watch?v=AWlwO9T8dkY) Dune Analytics was evaluated as the next option for creating an advanced DeFi dashboard. 
+Due to this [YouTube video]( https://www.youtube.com/watch?v=AWlwO9T8dkY) Dune Analytics was evaluated as the next option for creating an advanced DeFi dashboard. 
 Dune analytics is an [Oslo](https://careers.duneanalytics.com/) based company with a free and pro [offering]( https://www.duneanalytics.com/pricing) for Dune analytics. 
 This evaluation was done with the free version of Dune Analytics. 
 Like for The Graph, the technical backend of Dune analytics is a PostgreSQL database. 
