@@ -33,6 +33,8 @@ That’s why using a SubGraph and the GraphQL query language would not have been
 
 The dashboard requirements were advanced analytical functions comparable to what modern SQL databases provide. The required advanced analytical functions are for example window- or median-functions. 
 
+![TheGraphIndexing1](https://github.com/YET-Another-Github-Account/Blockchain-Analytics/blob/main/images/TheGraph1.png?raw=true)
+
 ### Documentation and community support  
 The project documentation and available community content are enterprise software grade. 
 Unfortunately the community support within the Discord channel left questions about the incomplete indexing unanswered and was not supportive as required to efficiently continue with the evaluation. 
@@ -43,6 +45,8 @@ The active GitHub indicates a strong adoption of The Graph for creating APIs tha
 
 Therefore The Graph wasn’t probably the right architectural choice from the beginning on and serves a different scenario which is API and dApp creation. 
 
+![TheGraphIndexing2](https://github.com/YET-Another-Github-Account/Blockchain-Analytics/blob/main/images/TheGraph2.png?raw=true)
+
 Out of scope in this evaluation were overall system design like the concepts of Indexers, Curators and Delegators.  
 Both the open-source license of the overall GitHub project and the usage the open-source database PostgreSQL are well aligned with the [DeFi paradigms](https://github.com/ong/awesome-decentralized-finance#what-is-decentralized-finance) of decentralization and open-source. 
 
@@ -52,6 +56,8 @@ Within the UMIP is a sample coding point the [Google BigQuery Ethereum dataset](
 There are two non-technical aspects which make BigQuery theoretically not a good fit for DeFi projects and paradigms like censorship resistance: 
 * GCP Big Query is not developed and provided under an open-source license 
 * Deployed as PaaS service on the Google Cloud Platform it’s an easy target for censorship. [Link](https://transparencyreport.google.com/user-data/us-national-security)
+
+![GCP-Marketplace](https://github.com/YET-Another-Github-Account/Blockchain-Analytics/blob/main/images/GCP_Marketpkace.png?raw=true)
 
 ## Dune Analytics 
 Due this [YouTube video]( https://www.youtube.com/watch?v=AWlwO9T8dkY) Dune Analytics was evaluated as the next tool for creating an advanced DeFi dashboard. 
@@ -65,6 +71,8 @@ The Dashboard designer is a browser based tool to design the dashboard. It provi
 Compared to commercial business intelligence or dashboard tools, the Dune designer provided about 10%-20% of the functionality. 
 
 Dune comes with an impressive [gallery of popular dashboards]( https://explore.duneanalytics.com/dashboards/popular) created by the team and community, which demonstrate the current functionality is more than sufficient to build professional dashboards.  
+
+![SuperRareDashboard](https://github.com/YET-Another-Github-Account/Blockchain-Analytics/blob/main/images/SuperRareDahsboard.png?raw=true)
  
 The designer allows to drag & drop textboxes and widgets on the dashboard. The widgets provide the option for layout formatting with markup language. 
 ### The query designer 
@@ -72,6 +80,8 @@ For data engineers the most exciting feature of Dune is the access to the Dune d
 The dune query designer combines a SQL-Editor and visualization designer, by providing the option to configure visual elements like charts, tables or maps for the SQL-query results. 
 To prevent developers having to start from the scratch, a broad library of sample queries is available and the option to fork these queries for own adjustments. 
 When browsing and reading the sample queries, the complexity and quality of the queries clearly indicate the involvement of practiced and professional data engineers.
+
+![QueryDesigner](https://github.com/YET-Another-Github-Account/Blockchain-Analytics/blob/main/images/QueryDesigner.png?raw=true)
  
 ### The dune decoding and abstractions 
 Next to the SQL-queries, the indexing/decoding for project specific contracts and the abstractions layer are important services for creating blockchain specific data queries. 
@@ -83,6 +93,7 @@ Next to the decoding services, smart-contract domain specific databases views an
 
 For implementing dashboards for new projects, the contracts have to be maintained in certain abstraction layer tables. For example contracts being added to the ER20 tokens table, to be available for DEX queries. During implementation the maintenance of new contracts and tokens to the abstraction layer will happen via GitHub workflows. These interactions require basic knowledge of GitHub. 
 
+![DuneDecoding](https://github.com/YET-Another-Github-Account/Blockchain-Analytics/blob/main/images/DuneDecoding.png?raw=true)
 
 ## Implementation of the degenerative.finance dashboard 
 The general setup here reflected to typical implementation of a dashboard project in corporate environments. The domain experts with strong DeFi background defined the requirements documents. The actual implementation was done with a strong background in analytics, but basic knowledge about Solidity contracts and the Dune data model. Discord was used the discuss the implementation and progress. 
