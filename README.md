@@ -97,6 +97,9 @@ For implementing dashboards for new projects, the contracts have to be maintaine
 
 ## Implementation of the degenerative.finance dashboard 
 The general setup here reflected to typical implementation of a dashboard project in corporate environments. The domain experts with strong DeFi background defined the requirements documents. The actual implementation was done with a strong background in analytics, but basic knowledge about Solidity contracts and the Dune data model. Discord was used the discuss the implementation and progress. 
+
+![DashboardMockup](https://github.com/YET-Another-Github-Account/Blockchain-Analytics/blob/main/images/DashboardMockUp.png?raw=true)
+
  
 ### Lessons learned and best practice. 
 During the implementation the following best practices where identified for new Dashboard and projects. 
@@ -109,3 +112,5 @@ During the implementation the following best practices where identified for new 
 * In case of teams with distributed skillsets the Solidity developers or DeFi experts ideally specify specifications similar to the UMA [UMIPs]( https://github.com/UMAprotocol/UMIPs/blob/master/UMIPs/umip-16.md) with pseudocode examples to adapted in SQL 
 
 * Ideally the Dune team and community would curate a glossary and quality assured samples for implementing common DeFi queries and charts like TVL, unique wallet holder, minting etc. 
+
+![DegenDashboard1](https://github.com/YET-Another-Github-Account/Blockchain-Analytics/blob/main/images/DegenDashboard1.png?raw=true)
