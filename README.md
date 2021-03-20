@@ -152,3 +152,9 @@ Some general thoughts, room for improvement and ideas for Blockchain analytics.
 ### Disclaimer 
 This document is a working document and reflects the author's current experience and knowledge in the area of Blockchain analytics. 
 It will likely be continuously improved and extended. In case of comments, critics or suggestions for improvement, please create a GitHub Issue. 
+
+
+### Ressources  
+https://medium.com/zengo/dune-analytics-introduction-tutorial-with-examples-d2c764600d6itHub 
+
+
