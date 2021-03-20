@@ -137,7 +137,7 @@ Some general thoughts, room for improvement and ideas for Blockchain analytics.
 
 * Duplicating the transactional Blockchains ledger to analytical databases reproduces the 30+ year old approach of having to copy transactional systems of records to data-warehouses for advanced analytics
 
-* Future Blockchain or distributed ledger technologies might mitigate this complexity of having to duplicate transactional data with built in analytical capabilities. Especially since built in analytical capabilities will enable more real-time enabled advanced analytics directly on the DLT 
+* Future Blockchain or distributed ledger technologies might mitigate this complexity, of having to duplicate transactional data, with built in analytical capabilities. Especially since built in analytical capabilities will enable more real-time enabled advanced analytics directly on the DLT 
 
 * Duplicating and persisting a Blockchain in a relational database destroys all immutability characteristics of DLTs
 
